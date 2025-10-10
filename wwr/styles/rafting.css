@@ -85,12 +85,6 @@ footer {
     margin-top: 10px;
 }
 
-/*.socialmedia {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-}*/
-
 .socialmedia a {
     text-decoration: none;
 }
