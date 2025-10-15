@@ -41,18 +41,27 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <form action="#">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
+                <table class="form-table">
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" name="name" id="name"></td>
+                    </tr>
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" name="email" id="email"></td>
+                    </tr>
 
-                <fieldset>
-                    <legend>Message Purpose</legend>
-                    <label><input type="radio" name="purpose" value="general">General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation">Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion">Website Suggestion</label>
-                </fieldset>
+                    <tr>
+                        <td><label>Message Purpose</label></td>
+                        <td>
+                            <label><input type="radio" name="purpose" value="general">General Inquiry</label>
+                            <label><input type="radio" name="purpose" value="reservation">Reservation Question</label>
+                            <label><input type="radio" name="purpose" value="suggestion">Website Suggestion</label>
+                            </fieldset>
+                        </td>
+                    </tr>
+                </table>
 
                 <label for="message">Message</label>
                 <textarea name="message" id="message"></textarea>

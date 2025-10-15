@@ -169,8 +169,8 @@ footer {
 /*Week 5*/
 
 .company-info p{
-    font-size: 0.80rem;
     text-align: center;
+    font-size: 0.80rem;
     margin: 0;
     font-weight: bold;
 }
@@ -181,20 +181,26 @@ footer {
     gap: 40px;
 }
 
-label {
+label{
+    max-width: 335px;
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--text-color);
+    padding: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: calc(100% - 130px);
-    padding: 8px;
+.form-table td {
+    padding: 2px;
+}
+
+.form-table input[type="text"],
+.form-table input[type="email"],
+textarea{
+    width: calc(165% - 100px);
+    max-width: 335px;
+    padding: 6px;
     border: 1px solid var(--soft-gray);
     border-radius: 4px;
-    resize: vertical;
 }
 
 textarea {
@@ -203,16 +209,10 @@ textarea {
 }
 
 button[type="submit"] {
-    width: calc(100% - 130px);
+    width: calc(100% - 110px);
     padding: 0.3rem;
     font-size: 0.8rem;
     cursor: pointer;
-}
-
-fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
 }
 
 .employee-gallery {
@@ -231,18 +231,3 @@ fieldset {
     width: 100%;
     height: auto;
 }
-
-/*
-
-input[type="text"],
-input[type="email"] {
-    margin-left: 80px;
-    width: 53%;
-}
-
-
-input[type="radio"]{
-    margin-left: 80px;
-}
-    display: grid;
-    grid-template-columns: auto 1fr;*/
