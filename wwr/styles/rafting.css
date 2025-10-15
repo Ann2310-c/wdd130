@@ -2,14 +2,16 @@
     --primary-color: #ffffff;
     --accent1-color: #264653;
     --accent2-color: #000;
+    --soft-gray: rgba(50, 50, 50, .2);
+    --text-color: #3B3B3B;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -164,3 +166,83 @@ footer {
     margin-top: 4px;
 }
 
+/*Week 5*/
+
+.company-info p{
+    font-size: 0.80rem;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 130px);
+    padding: 8px;
+    border: 1px solid var(--soft-gray);
+    border-radius: 4px;
+    resize: vertical;
+}
+
+textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: calc(100% - 130px);
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.employee-gallery figure {
+    width:130px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.employee-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/*
+
+input[type="text"],
+input[type="email"] {
+    margin-left: 80px;
+    width: 53%;
+}
+
+
+input[type="radio"]{
+    margin-left: 80px;
+}
+    display: grid;
+    grid-template-columns: auto 1fr;*/
