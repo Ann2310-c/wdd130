@@ -289,7 +289,7 @@ button[type="submit"] {
     padding: 8px;
     width: 100%;
     max-width: 250px;
-    border: 1px var(--soft-gray);
+    border: 1px solid var(--soft-gray);
     border-radius: 4px;
 }
 
